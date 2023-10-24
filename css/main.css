@@ -46,3 +46,11 @@ header h1{width:60px;padding-left:10px;}
 .best_new .tit{display: flex;}
 .best_new .tit p{font-size: 1.5rem;font-weight:600;width:fit-content;margin-right:3vw;color:#888;}
 .best_new .tit p.on{color:#2fcab0;}
+
+.best_new .item{width:40vw;}
+.best_new .item .prd_name{font-size: 1rem;font-weight:500;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.best_new .item .prd_price{display:flex;justify-content: space-between;align-items: flex-end;margin-top:1vw;}
+.best_new .item .prd_price span{width:fit-content;}
+.best_new .item .prd_price .per{font-size: 0.8rem;font-weight:700;color:#2fcab0;}
+.best_new .item .prd_price .sale{font-size:1.1rem;font-weight:700;}
+.best_new .item .prd_price .real{font-size:0.9rem;font-weight:600;color:#999;text-decoration: line-through;}

@@ -23,5 +23,9 @@ var swiper = new Swiper(".navi", {
     slidesPerView: "auto",
 });
 
+var swiper = new Swiper(".best_wrap", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+});
 
 
