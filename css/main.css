@@ -2,7 +2,47 @@
 body {width:100%;font-family: 'Noto Sans KR', sans-serif;font-size:16px;letter-spacing: -0.03em;}
 a{text-decoration: none;color:#222;}
 
-header{padding:5px 10px;}
-header h1{width:60px;}
+header{padding:10px 10px 5px;width:calc(100% - 20px);box-shadow: 0px 0px 10px 5px #888;position:relative;}
+header.scroll{position:fixed;top:0;left:0;z-index: 999;background-color: #fff;}
+header h1{width:60px;padding-left:10px;}
 
+.head_inner{display: flex;justify-content: space-between;align-items: center;}
+.head_inner .icon{display: flex;width:fit-content;}
+.head_inner .icon p{width:10vw;height:10vw;}
+
+/* navi */
+.navi{display: flex;justify-content: space-around;margin-bottom:2vw;width:fit-content !important;}
+.navi .swiper-slide{width:fit-content !important;}
+.navi a{width:fit-content;display: flex;align-items: center;justify-content: center;padding:2vw 0;margin:0 2vw;font-size:1.1rem;color:#888;font-weight:500;}
+.navi a.active{color:#222;font-weight:700;}
+
+.navi a.best{position:relative;}
+.navi a.best::after{content:'';position:absolute;top:2vw;right:-1.5vw;width:1.5vw;height:1.5vw;background:#2fcab0;border-radius: 50%;animation: twinkle 0.7s alternate infinite;}
+@keyframes twinkle {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.navi a.new{position:relative;}
+.navi a.new::after{content:'N';position:absolute;top:1vw;right:-2vw;font-size:0.6rem;color:#f00;}
+
+.navi a.wave span{animation: waviy 1s infinite;animation-delay: calc(.1s * var(--i));}
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-7px)
+    }
+  }
 /* main banner */
+.main_bnr{position:relative;height:auto;}
+.main_bnr .swiper-wrapper{height:fit-content;}
+.main_bnr .swiper-pagination{display:block;padding:5px 15px;border-radius:20px;position: absolute;width:fit-content;height:fit-content;top:calc(100% - 13vw);left:calc(100% - 20vw);background:rgba(255,255,255,0.5);font-size:1rem;line-height: 100%;}
+
+
+/* best_new */
+.best_new{padding:10px 15px;}
+.best_new .tit{display: flex;}
+.best_new .tit p{font-size: 1.5rem;font-weight:600;width:fit-content;margin-right:3vw;color:#888;}
+.best_new .tit p.on{color:#2fcab0;}
