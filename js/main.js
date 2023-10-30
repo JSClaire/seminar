@@ -23,9 +23,23 @@ var swiper = new Swiper(".navi", {
     slidesPerView: "auto",
 });
 
-var swiper = new Swiper(".best_wrap", {
+var swiper = new Swiper(".prd_wrap", {
     slidesPerView: "auto",
     spaceBetween: 20,
 });
+
+$('.best_new .tit p').on('click', function(){
+    $(this).siblings().removeClass('on');
+    $(this).addClass('on');
+    if($('.best_new .tit .best').hasClass('on')){
+        $('.new_wrap').hide();
+        $('.best_wrap').show();
+    } else if($('.best_new .tit .new').hasClass('on')){
+        $('.best_wrap').hide();
+        $('.new_wrap').show();
+    }
+});
+
+
 
 
