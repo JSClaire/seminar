@@ -40,6 +40,13 @@ $('.best_new .tit p').on('click', function(){
     }
 });
 
+$('.btn_close').click(function(){
+    $('.popup').hide();
+});
+
+
+var random = Math.floor(Math.random() * $('.wrap').length);
+$('.wrap').hide().eq(random).show();
 
 
 
