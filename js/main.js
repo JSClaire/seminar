@@ -19,6 +19,18 @@ var swiper = new Swiper(".mainSwiper", {
     loop:true,
 });
 
+var swiper = new Swiper(".videoSwiper", {
+    autoplay: {
+        delay: 8000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+    loop:true,
+});
+
 var swiper = new Swiper(".navi", {
     slidesPerView: "auto",
 });

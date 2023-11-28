@@ -6,9 +6,11 @@ html, body {
 body {width:100%;font-family: 'Noto Sans KR', sans-serif;font-size:16px;letter-spacing: -0.03em;}
 a{text-decoration: none;color:#222;}
 
-header{padding:10px 10px 5px;width:calc(100% - 20px);box-shadow: 0px 0px 10px 5px #888;position:relative;}
-header.scroll{position:fixed;top:0;left:0;z-index: 999;background-color: #fff;}
+header{padding:10px 10px 5px;width:calc(100% - 20px);box-shadow: 0px 0px 10px 5px #888;position:relative;background-color: #fff;}
+header.scroll{position:fixed;top:0;left:0;z-index: 999;}
 header h1{width:60px;padding-left:10px;}
+
+
 
 .head_inner{display: flex;justify-content: space-between;align-items: center;}
 .head_inner .icon{display: flex;width:fit-content;}
@@ -44,6 +46,9 @@ header h1{width:60px;padding-left:10px;}
 .main_bnr .swiper-wrapper{height:fit-content;}
 .main_bnr .swiper-pagination{display:block;padding:5px 15px;border-radius:20px;position: absolute;width:fit-content;height:fit-content;top:calc(100% - 13vw);left:calc(100% - 20vw);background:rgba(255,255,255,0.5);font-size:1rem;line-height: 100%;}
 
+/* video Banner */
+.main_bnr.videoSwiper .swiper-wrapper{height:56vw;}
+.main_bnr.videoSwiper .swiper-wrapper .swiper-slide{height:auto;overflow: hidden;}
 
 /* best_new */
 .best_new{padding:10px 15px;margin-bottom:10vw;}
@@ -108,5 +113,29 @@ header h1{width:60px;padding-left:10px;}
 .pop02 .pop_wrap .sale_txt{position: absolute;bottom:6vw;font-size:1.3rem;}
 .pop02 .pop_wrap .sale_txt span{font-size:1.5rem;color:#f00;font-weight:700;}
 
+/* time_sale */
+.time_wrap{display: flex;align-items: center;}
+
+.time_sale{padding:10px 15px;width:calc(100% - 30px);margin-bottom:10vw;}
+.time_sale .tit{margin-bottom:5vw;font-size: 1.5rem;font-weight:600;width:fit-content;margin-right:3vw;color:#222;}
+.time_sale .prd_name{font-size: 1.2rem;font-weight:500;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;text-align: center;}
+.time_sale .prd_price{display:flex;justify-content: center;align-items: flex-end;margin-top:1vw;}
+.time_sale .prd_price .sale{font-size: 1.5rem;color:#2fcab0}
+.time_sale .img{position:relative;}
+.time_sale .img::after{content:'Timesale';text-align:center;position:absolute;top:0;left:0;width:20vw;font-size:1.1rem;background:rgba(0, 26, 255, 0.836);color:#fff;}
+
+
+/* timer */
+.count{display: flex;flex-direction: column;justify-content: center;align-items: center;text-align: center;}
+.sale_time{font-size:1.5rem;font-weight: 700;margin-bottom:3vw;}
+#countdown{font-size:2.0rem;color:#f00;font-weight: 700;}
+
+
+/* 고운군인 */
+.roka{padding:10px 15px;width:calc(100% - 30px);margin-bottom:10vw;}
+.roka .tit{margin-bottom:5vw;font-size: 1.5rem;font-weight:600;width:fit-content;margin-right:3vw;color:#222;}
+.roka .tit span{color:green}
+.roka_wrap .prd_wrap .swiper-wrapper{justify-content: space-between;}
+.roka_wrap .prd_wrap .swiper-wrapper .per{color:green}
 
 
